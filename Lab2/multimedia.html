@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <style>
+        .fotografias{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .fotografias img {
+            width: 150px;
+            border-radius: 20px;
+        }
+
+        section:nth-of-type(3) p:nth-child(odd){
+            font-style: italic;
+            color: darkred;
+        }
+        section:nth-of-type(3) p:nth-child(even) {
+            font-weight: italic;
+            color: grey;
+        }
+        </style>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <title>Montijo</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Montijo</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="local.html">Localização</a>
+                <a href="multimedia.html">Multimédia</a>
+                <a href="info.html">Informação</a>
+            </nav>
+        </header>
+        
+        <main>
+            <h2>Multimedia</h2>
+            <p>
+                <p>
+                    <a href="#fotografias">Fotografias</a>
+                    <a href="#video">Video</a>
+                    <a href="#poesia">Poesia</a>
+                </p>
+            </p>
+            <p>Nesta pagina entra fotos do Montijo a melhor cidade da margem sul!!!</p>
+            <section >
+                <h3 id="fotografias">Fotografias</h3>
+                <div class="fotografias">
+                    <img src="imagens/imagem 1x1.jpg" alt="Igreja">
+                    <img src="imagens/imagem 1x2.jpg" alt="Centro">
+                    <img src="imagens/imagem 1x3.jpg" alt="Ribeirinha">
+                    <img src="imagens/imagem 1x4.jpg" alt="Parque">
+                    <img src="imagens/imagem 1x5.jpg" alt="Moinho">
+                    <img src="imagens/Imagem 1x6.jpg" alt="Forum">
+                    <img src="imagens/imagem 1x7.jpg" alt="Moinho Aquatico">
+                    <img src="imagens/imagem 1x8.jpg" alt="Centro Montijo">
+                </div>
+            </section>
+
+            <section>
+                <h3 id="video">Video</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/IW_k6XwtqWI?si=dUGXRocLF6e4KGac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+
+            <section>
+                <h3 id="poesia">Poesia</h3>
+                <p>As ruas sussurram histórias antigas,</p>
+                <p>De pescadores, marés e fadigas.</p>
+                <p>Na lezíria fértil, o verde a crescer,</p>
+                <p>É terra que acolhe, é lar, é viver.</p>
+
+                <p>As ruas sussurram histórias antigas,</p>
+                <p>De pescadores, marés e fadigas.</p>
+                <p>Na lezíria fértil, o verde a crescer,</p>
+                <p>É terra que acolhe, é lar, é viver.</p>
+
+                <p>O cais observa o rio a passar,</p>
+                <p>Espelho de sonhos, de quem vai voltar.</p>
+                <p>O vento traz cheiros de mar e pinhal,</p>
+                <p>Montijo, encanto singelo, imortal.</p>
+
+                <p>E quem por ti passa, contigo se enlaça,</p>
+                <p>Cidade que é porto, ternura e graça.</p>
+                <p>Montijo querido, de luz e calor,</p>
+                <p>És terra de origem, és berço de amor.</p>                
+            </section>
+        </main>
+
+        <footer>
+            <p>DIW 2025</p>
+        </footer>
+    </body>
+</html>
