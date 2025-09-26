@@ -1,0 +1,50 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+header h1{
+    color: whitesmoke;
+    background: rgb(0, 0, 146);
+    text-align: center;
+    padding: 20px;
+    margin: 0px;    
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(37, 36, 36);
+    padding: 10px;
+}
+
+header nav a {
+    padding: 10px 25px;
+    border-radius: 10px;
+    background-color:rgb(37, 36, 36);
+    color: whitesmoke;
+    text-align: center;
+}
+
+main {
+    padding: 10px;
+    text-align: center;
+}
+
+main img{
+    width: 200px;
+    border-radius: 20px;  
+}
+
+section{
+    text-align: center;
+}
+
+
+footer {
+    color: whitesmoke;
+    background:rgb(37, 36, 36);
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+}
