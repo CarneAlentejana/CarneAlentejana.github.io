@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Diogo Nunes - Página Web</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    /* ===== RESET ===== */
     * {
       margin: 0;
       padding: 0;
@@ -16,10 +16,9 @@
     body {
       font-family: Arial, Helvetica, sans-serif;
       line-height: 1.5;
-      color: #111;
+      color: #111111;
     }
 
-    /* ===== NAV ===== */
     header {
       position: fixed;
       top: 0;
@@ -36,7 +35,7 @@
     }
 
     nav a {
-      color: #fff;
+      color: white;
       font-size: 1.1rem;
       font-weight: bold;
       text-decoration: none;
@@ -44,24 +43,20 @@
     }
 
     nav a:hover {
-      color: #aaa;
+      color: #a1a1a1;
     }
 
-    /* ===== HERO ===== */
     #HeroPage {
       height: 100vh;
       background: whitesmoke;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
       padding: 0 10%;
       gap: 40px;
     }
 
     .hero-text {
-      display: flex;
-      flex-direction: column;
+      position: relative;
+      left: 50px;
+      top: 250px;
       font-size: 1.2rem;
     }
 
@@ -70,12 +65,14 @@
     }
 
     .hero-image img {
+      position: relative;
+      left: 700px;
+      top: -70px;
       max-width: 400px;
       width: 100%;
       border-radius: 12px;
     }
 
-    /* ===== PORTFÓLIO ===== */
     #Portefolio {
       height: 100vh;
       background: linear-gradient(whitesmoke, rgb(196, 194, 194));
@@ -102,19 +99,18 @@
       font-size: 1.3rem;
       font-weight: bold;
       text-decoration: none;
-      color: #000;
-      border: 2px solid #000;
+      color: black;
+      border: 2px solid black;
       padding: 12px 28px;
       border-radius: 8px;
       transition: all 0.3s;
     }
 
     .laboratorios a:hover {
-      background: #000;
-      color: #fff;
+      background: black;
+      color: white;
     }
 
-    /* ===== DIW ===== */
     #Diw {
       height: 100vh;
       background: rgb(196, 194, 194);
@@ -173,7 +169,6 @@
       height: auto;
     }
 
-    /* ===== FOOTER ===== */
     footer {
       background: #111;
       color: #ccc;
@@ -182,7 +177,6 @@
       font-size: 0.9rem;
     }
 
-    /* ===== RESPONSIVO ===== */
     @media (max-width: 600px) {
       #HeroPage {
         height: 175vh;
@@ -191,39 +185,45 @@
         padding: 40px 5%;
       }
 
-      .hero-text{
+      .hero-text {
         padding: 10%;
+        position: relative;
+        left: 0px;
+        top: 0px;
       }
 
       .hero-image img {
         margin-top: 20px;
+        position: relative;
+        left: 0px;
+        top: -10px;
       }
 
-        #Portefolio {
-            height: 100vh;
-            padding-top: 60px;
-            padding-left: 15px;
-            padding-right: 15px;
-        }
+      #Portefolio {
+        height: 100vh;
+        padding-top: 60px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
 
-        #Portefolio h2 {
-            font-size: 1.7rem;
-            margin-bottom: 25px;
-        }
+      #Portefolio h2 {
+        font-size: 1.7rem;
+        margin-bottom: 25px;
+      }
 
-        .laboratorios {
-            gap: 20px;
-            flex-direction: column; /* botões em coluna */
-            align-items: center;
-        }
+      .laboratorios {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+      }
 
-        .laboratorios a {
-            width: 100%;
-            max-width: 220px; /* limita o tamanho do botão */
-            font-size: 1.1rem;
-            padding: 10px 0;
-            text-align: center;
-        }
+      .laboratorios a {
+        width: 100%;
+        max-width: 220px;
+        font-size: 1.1rem;
+        padding: 10px 0;
+        text-align: center;
+      }
 
       #Diw {
         flex-direction: column;
@@ -250,8 +250,6 @@
 </head>
 
 <body>
-
-  <!-- NAVBAR -->
   <header>
     <nav>
       <a href="#HeroPage">Início</a>
@@ -261,7 +259,6 @@
   </header>
 
   <main>
-    <!-- HERO -->
     <section id="HeroPage">
       <div class="hero-text">
         <p>Na minha cabeça, este é o melhor site de todos!</p>
@@ -274,7 +271,6 @@
       </div>
     </section>
 
-    <!-- PORTFÓLIO -->
     <section id="Portefolio">
       <h2>Laboratórios</h2>
       <div class="laboratorios">
@@ -284,11 +280,11 @@
       </div>
     </section>
 
-    <!-- DIW -->
     <section id="Diw">
       <div class="diw-content">
         <h2>A Minha Primeira Página Web!</h2>
-        <p>Bem-vindo à minha primeira página desenvolvida para a disciplina de <strong>Desenvolvimento de Interfaces Web</strong>!</p>
+        <p>Bem-vindo à minha primeira página desenvolvida para a disciplina de <strong>Desenvolvimento de Interfaces
+            Web</strong>!</p>
         <p>Ao longo do semestre explorámos tecnologias fundamentais da Web 🌐, como:</p>
         <ul>
           <li>HTML</li>
@@ -297,7 +293,8 @@
           <li>React & Next.js</li>
         </ul>
         <p>Com estas ferramentas, criaremos soluções criativas e funcionais.</p>
-        <p>Consulta o conteúdo completo da UC no <a href="https://moodle.ensinolusofona.pt/course/view.php?id=11232" target="_blank" rel="noopener noreferrer">Moodle</a>.</p>
+        <p>Consulta o conteúdo completo da UC no <a href="https://moodle.ensinolusofona.pt/course/view.php?id=11232"
+            target="_blank" rel="noopener noreferrer">Moodle</a>.</p>
       </div>
 
       <div class="diw-image">
@@ -306,10 +303,10 @@
     </section>
   </main>
 
-  <!-- FOOTER -->
   <footer>
     <p>Universidade Lusófona © 2025 — Diogo Nunes</p>
   </footer>
 
 </body>
+
 </html>
